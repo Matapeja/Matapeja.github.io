@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap');
+
+body {
+    background-color: #49416D;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Baloo Paaji 2', cursive;
+    color: white;
+    font-size: 120%;
+}
+
+.klawiszologia {
+    width: 20%;
+}
+
+.m {
+    display: flex;
+    flex-direction: row;
+}
+
+#stroke-color, #fill-color {
+    position: relative;
+    top: 25px;
+    left: 10px;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+}
+
+input[type=button] {
+    background-color: white;
+    color: black;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 70%;
+}
+
+input[type=button]:hover {
+    background-color:  rgb(195, 195, 195);
+}
+
+.tekst {
+    margin-left: 10px;
+}
+
+canvas {
+    border: 1px solid white;
+    background-color: #DDF2EB;
+    position: relative;
+    top: 30px;
+}
