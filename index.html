@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <input type="text" name="pageURL" id="pageURL">
+            <input type="button" value="teleport" id="btn">
+        </form>
+    </div>
+
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function(){
+            window.open("pages/" + document.getElementById("pageURL").value + ".html", "_self")
+        })
+    </script>
+</body>
+</html>

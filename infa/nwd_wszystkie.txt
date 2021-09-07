@@ -1,0 +1,31 @@
+int nwd(int a, int b) { ... }
+
+1) -----------------------------
+
+int r;
+while (b>0) {
+	r = a%b;
+	a=b;
+	b=r;
+}
+return a;
+
+
+1a) --------------------------
+
+if (b==0) return a;
+return nwd(b,a%b);
+
+2) ---------------------
+
+while (a!=b)
+	if (a>b) a-=b;
+	else b-=a;
+return a;
+
+
+2a) --------------------------
+
+if (a==b) return a;
+if (a>b) return nwd(a-b,b);
+return nwd(a,b-a);
